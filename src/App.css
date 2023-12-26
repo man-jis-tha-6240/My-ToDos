@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background: url(./bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* height: fit-content; */
+  position: absolute;
+}
+
+.my-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-head {
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 423px;
+}
+
+.nav-btns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.my-link {
+  font-size: 22px;
+  font-family: 'Pangolin', cursive;
+  text-decoration: none;
+  color: rgb(80, 80, 80);
+  margin: 0px 20px;
+
+}
+
+.my-link:hover {
+  color: #f08080;
+  text-decoration: #f08080 underline;
+  text-decoration-thickness: 5px;
+}
+
+.active {
+  color: #f08080;
+  text-decoration: #f08080 underline;
+  text-decoration-thickness: 5px;
+}
+
+.succ {
+  margin-left: 500px;
+  background-color: peachpuff !important;
+  width: fit-content !important;
+}
+
+.fail {
+  margin-left: 500px;
+  color: white;
+  background-color: #ee7474 !important;
+  width: fit-content !important;
+}
+
+
+.login-form,
+.signup-form {
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#name {
+  margin-bottom: 20px;
+}
+
+#signup-btn {
+  margin-top: 20px;
+}
+
+.input-title input {
+  overflow: visible;
+  caret-color: #f08080;
+  border: none;
+  height: 50px;
+  width: 450px;
+  border-radius: 20px;
+  padding-left: 20px;
+  font-family: 'Pangolin', cursive;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.total-inp {
+  margin: auto;
+  overflow: visible;
+  align-items: center;
+  display: flex;
+  grid-column-end: 4;
+  grid-column-start: 1;
+  justify-content: space-evenly;
+  flex: 0 0 100%;
+  margin-bottom: 20px;
+  margin-left: 140px;
+}
+
+.input-title input:focus {
+  border: 4px solid #faa693;
+  outline: none;
+}
+
+.input-desc input {
+  overflow: visible;
+  caret-color: #f08080;
+  border: none;
+  height: 50px;
+  width: 450px;
+  border-radius: 20px;
+  padding-left: 20px;
+  margin-right: 10px;
+  font-family: 'Pangolin', cursive;
+  font-size: 15px;
+}
+
+.input-desc input:focus {
+  border: 4px solid #faa693;
+  outline: none;
+}
+
+#div {
+  min-width: 100%;
+}
+
+#password {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.my-btn {
+  font-family: 'Pangolin', cursive;
+  font-size: large;
+  font-weight: bold;
+  height: 50px;
+  border-radius: 50px;
+  width: 130px;
+  background-color: #f08080;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.my-btn:hover {
+  background-color: #ee7474;
+
+}
+
+.todo-whole {
+  max-width: 100%;
+  margin: auto;
+}
+
+.to-do {
+  /* border: 2px solid #C68EA0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.complete {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* border: 2px solid #C68EA0; */
+  margin-left: 30px;
+}
+
+.another-div {
+  /* padding: 10px; */
+  height: fit-content;
+  width: fit-content;
+  border: 4px solid #f8ad9d;
+  border-top: 0;
+  background-color: #fce2cb;
+  border-radius: 0px 0px 12px 12px;
+  min-height: 250px;
+  min-width: 320px;
+  max-height: 250px;
+  overflow: auto;
+}
+
+.another-div::-webkit-scrollbar {
+  width: 10px;
+}
+
+.another-div::-webkit-scrollbar-track {
+  background: #fce2cb;
+}
+
+.another-div::-webkit-scrollbar-thumb {
+  background-color: #f59292;
+  border-radius: 20px;
+  border: 3px solid #fce2cb;
+}
+
+.head {
+  margin: 0;
+  border: 4px solid #f8ad9d;
+  border-bottom: 0;
+  border-radius: 12px 12px 0px 0px;
+  background-color: #fce2cb;
+  min-width: 320px;
+  font-family: 'Pangolin', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  color: #f08080;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.flexidiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 100px;
+}
+
+.todo-list-item h3 {
+  margin: 0px 0px 0px 20px;
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: 'Dancing Script', cursive;
+
+}
+
+.todo-list-item p {
+  display: flex;
+  margin-bottom: 0;
+  margin-left: 15px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 15px;
+  color: black !important;
+}
+
+.todo-list-item {
+  border: 3px dotted #f8ad9d;
+  border-left: 0;
+  border-right: 0;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  max-height: fit-content;
+}
+
+.small-head {
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-head span {
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+}
+
+.del {
+  font-weight: 500;
+}
+
+.right {
+  font-weight: 500;
+}
+
+.del:hover {
+  color: #ee7474;
+}
+
+.right:hover {
+  color: #ee7474;
+}
+
+.update:hover {
+  color: #ee7474;
+
+}
+
+.cmpltd {
+  font-family: 'Pangolin', cursive;
+  margin-left: 18px;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.my-edit-modal {
+  background-color: #fce2cb !important;
+  border-radius: 15px !important;
+
+}
+
+#etitle {
+  margin-bottom: 10px;
+}
+
+.my-edit-modal button {
+  font-size: 15px;
+  width: 80px;
+}
+
+@media (max-width: 768px) {
+  .login-form {
+    margin-left: 31px;
+  }
+
+  .main-head {
+    margin-left: 243px;
+  }
+
+  .input-title input {
+    width: 330px;
+  }
+
+  .input-desc input {
+    width: 270px;
+  }
+
+  .total-inp {
+    margin-left: 27px;
+  }
+
+  .flexidiv {
+    margin-left: 20px;
+  }
+
+  #etitle {
+    width: 430px;
+    margin-left: 10px;
+  }
+
+  #edescription {
+    width: 430px;
+    margin-left: 10px;
+  }
+
+  .succ,
+  .fail {
+    margin-left: 220px;
+  }
+}
+
+@media (max-width: 540px) {
+  .App {
+    overflow-y: auto;
+  }
+
+  .main-head {
+    font-size: 32px;
+    margin-left: 8px;
+  }
+
+  .my-link {
+    font-size: 15px;
+  }
+
+  .login-form,
+  .signup-form {
+    margin: 0;
+  }
+
+  .total-inp {
+    flex-direction: column;
+    height: 200px;
+    margin-left: 0;
+  }
+
+  .input-title input {
+    width: 330px;
+    margin: 10px 0px;
+  }
+
+  .input-title input::-webkit-selection {
+    color: white;
+    background: #ee7474;
+  }
+
+  .input-desc input {
+    width: 330px;
+    margin: 12px 0px;
+
+  }
+
+  .flexidiv {
+    flex-direction: column;
+  }
+
+  .to-do {
+    margin-left: 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 360px;
+  }
+
+  #todo-another-div {
+    width: 319px;
+  }
+
+  .complete {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+
+  .input-add input {
+    width: 330px;
+  }
+
+  .another-div {
+    min-width: 300px;
+  }
+
+  .head {
+    min-width: 320px;
+  }
+
+  .succ,
+  .fail {
+    margin-left: 40px;
+  }
+}
